@@ -19,7 +19,7 @@ themeToggle.addEventListener('click', () => {
 });
 
 function updateThemeIcon(theme) {
-  if(theme === 'dark') {
+  if (theme === 'dark') {
     themeIcon.classList.remove('ph-moon');
     themeIcon.classList.add('ph-sun');
   } else {
@@ -31,7 +31,7 @@ function updateThemeIcon(theme) {
 /* --- ANIMATED STATS --- */
 function animate(id, end) {
   let el = document.getElementById(id);
-  const duration = 2500; 
+  const duration = 2500;
   const startTime = performance.now();
 
   function easeOutQuart(x) { return 1 - Math.pow(1 - x, 4); }
@@ -40,7 +40,7 @@ function animate(id, end) {
     const elapsed = currentTime - startTime;
     const progress = Math.min(elapsed / duration, 1);
     const currentVal = Math.floor(easeOutQuart(progress) * end);
-    
+
     el.textContent = currentVal + (id === 'stars' || id === 'designs' ? '+' : '');
 
     if (progress < 1) requestAnimationFrame(update);
@@ -82,7 +82,7 @@ navDropdown.querySelectorAll('.nav-dropdown-link').forEach(element => {
 /* --- DYNAMIC MOBILE NAVIGATION --- */
 document.addEventListener('DOMContentLoaded', () => {
   const navDropdown = document.getElementById('nav-dropdown');
-  
+
   // The links we hid on mobile, now formatted for the dropdown
   const mobileLinks = [
     { text: 'Home', href: '/', icon: 'ph-house' },
@@ -97,12 +97,12 @@ document.addEventListener('DOMContentLoaded', () => {
     linkEl.className = 'nav-dropdown-link mobile-only-link'; // Custom class for CSS targeting
     linkEl.href = linkData.href;
     linkEl.innerHTML = `<i class="ph ${linkData.icon}"></i> ${linkData.text}`;
-    
+
     // Ensure the dropdown closes when these new links are clicked
     linkEl.addEventListener('click', () => {
       navDropdown.classList.remove('active');
     });
-    
+
     fragment.appendChild(linkEl);
   });
 
@@ -124,7 +124,7 @@ const testimonialsContainer = document.getElementById('testimonials-container');
 if (testimonialsTrack && testimonialsContainer) {
   // Duplicate cards for seamless infinite scroll on large screens
   const isDesktop = window.innerWidth > 768;
-  
+
   if (isDesktop) {
     const cards = testimonialsTrack.querySelectorAll('.testimonial-card');
     const cardsHTML = Array.from(cards).map(card => card.cloneNode(true));

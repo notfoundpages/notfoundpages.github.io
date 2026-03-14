@@ -1,499 +1,535 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>notfoundpages</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>notfoundpages</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
 
-<script src="https://unpkg.com/@phosphor-icons/web"></script>
-<link rel="stylesheet" href="/assets/css/root/index.css">
-<link rel="stylesheet" href="/_components/footer/style.css">
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <link rel="stylesheet" href="/assets/css/root/index.css">
+  <link rel="stylesheet" href="/_components/footer/style.css">
 
 </head>
 
 <body>
 
-<div class="mesh-bg"></div>
+  <div class="mesh-bg"></div>
 
-<nav>
-  <div class="nav-glass">
-    <div class="nav-main">
-      <div class="logo">
-        notfound<span>pages</span>
-      </div>
-      <div class="nav-links">
-        <a href="/">Home</a>
-        <a href="/gallery/">Gallery</a>
-        <a href="/designs/">Designs</a>
-        <a href="/#contribute">Contribute</a>
-        <a href="/docs/">Docs</a>
-      </div>
-      <div class="nav-actions">
-        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
-          <i class="ph ph-moon" id="theme-icon"></i>
-        </button>
-        <a class="btn-sm" href="https://github.com/notfoundpages">
-          <i class="ph-bold ph-github-logo"></i> <span>View Organisation</span>
-        </a>
-      </div>
-    </div>
-    <button class="nav-more-btn" id="nav-more-btn" aria-label="More options">
-      <i class="ph ph-dots-three"></i>
-    </button>
-    <div class="nav-dropdown" id="nav-dropdown">
-      <a class="nav-dropdown-link" href="/about/">
-        <i class="ph ph-info"></i> About
-      </a>
-      <a class="nav-dropdown-link" href="/sponsors/">
-        <i class="ph ph-star"></i> Sponsors
-      </a>
-      <a class="nav-dropdown-link" href="community/contributors/">
-        <i class="ph ph-users"></i> Contributors
-      </a>
-      <a class="nav-dropdown-link" href="/miscellaneous/">
-        <i class="ph ph-wrench"></i> Miscellaneous
-      </a>
-    </div>
-  </div>
-</nav>
-
-<section class="hero container">
-  <div class="badge">
-    <div class="badge-dot"></div>
-    Open Source Ecosystem
-  </div>
-
-  <h1>The Standard for<br><span class="gradient-text">404 Experiences</span></h1>
-
-  <p>Beautifully crafted, open-source error pages built by the developer community. Perfect your app's dead ends with our GitHub organisation repositories.</p>
-
-  <div style="display: flex; justify-content: center; gap: 16px; flex-wrap: wrap;">
-    <a href="https://github.com/orgs/notfoundpages/repositories" class="btn-primary">
-      <i class="ph-bold ph-folder-open"></i> Browse Repositories
-    </a>
-    <a href="/docs/" class="btn-outline">
-      <i class="ph-bold ph-book-open-text"></i> Read Documentation
-    </a>
-  </div>
-
-  <div class="stats">
-    <div class="stat-card">
-      <h2><i class="ph-fill ph-code"></i> <span id="designs">0</span></h2>
-      <p>Repositories</p>
-    </div>
-    <div class="stat-card">
-      <h2><i class="ph-fill ph-star"></i> <span id="stars">0</span></h2>
-      <p>GitHub Stars</p>
-    </div>
-    <div class="stat-card">
-      <h2><i class="ph-fill ph-users"></i> <span id="contributors">0</span></h2>
-      <p>Contributors</p>
-    </div>
-  </div>
-</section>
-
-<div class="tech-stack">
-  <div class="container">
-    <p>Independent Repositories. Drop Into Any Stack.</p>
-    <div class="stack-icons">
-      <i class="ph ph-file-html" title="HTML5"></i>
-      <i class="ph ph-file-css" title="CSS3"></i>
-      <i class="ph ph-file-js" title="JavaScript"></i>
-      <i class="ph ph-atom" title="React"></i>
-      <i class="ph ph-code-block" title="Vue/Svelte"></i>
-      <i class="ph ph-terminal-window" title="CLI Integrations"></i>
-    </div>
-  </div>
-</div>
-
-<section class="section container" id="features">
-  <div class="section-header">
-    <h2>Built for modern stacks</h2>
-    <p>Everything you need to create the perfect fallback experience, tailored for developers and UI/UX designers.</p>
-  </div>
-
-  <div class="bento-grid">
-    <div class="bento-item bento-wide">
-      <div class="icon-box"><i class="ph ph-lightning"></i></div>
-      <h3>Zero Dependencies</h3>
-      <p>Copy and paste raw HTML and CSS. No massive libraries, no bloat. Just clean, optimized code that renders instantly when your users hit a dead end.</p>
-    </div>
-    
-    <div class="bento-item">
-      <div class="icon-box"><i class="ph ph-palette"></i></div>
-      <h3>Glassmorphism & UI</h3>
-      <p>Designs that leverage modern CSS features like backdrop-filter, fluid typography, and dynamic theme switching.</p>
-    </div>
-
-    <div class="bento-item">
-      <div class="icon-box"><i class="ph ph-git-branch"></i></div>
-      <h3>Single Page Repositories</h3>
-      <p>Every specific 404 design gets its own dedicated repository. Zero bloat. Just clone the exact page you need and nothing else.</p>
-    </div>
-
-    <div class="bento-item bento-wide">
-      <div class="icon-box"><i class="ph ph-shield-check"></i></div>
-      <h3>MIT + Apache 2.0 Licensed</h3>
-      <p>Fully open source. Use them in personal projects, commercial client work, or enterprise applications without worrying about complex legalities.</p>
-    </div>
-  </div>
-</section>
-
-<section class="section container" id="categories">
-  <div class="section-header">
-    <h2>Explore Design Categories</h2>
-    <p>Our GitHub organisation categorizes 404 pages by aesthetic and technical implementation.</p>
-  </div>
-
-  <div class="categories-grid">
-    <a href="/designs/minimal/" class="category-card">
-      <div class="category-icon"><i class="ph-light ph-square-half"></i></div>
-      <h4>Minimal</h4>
-      <p>Clean typography and whitespace.</p>
-    </a>
-    <a href="/designs/terminal/" class="category-card">
-      <div class="category-icon"><i class="ph-light ph-terminal"></i></div>
-      <h4>Terminal</h4>
-      <p>Developer-focused console UIs.</p>
-    </a>
-    <a href="/designs/glassmorphism/" class="category-card">
-      <div class="category-icon"><i class="ph-light ph-drop-half-bottom"></i></div>
-      <h4>Glassmorphism</h4>
-      <p>Frosted glass and gradients.</p>
-    </a>
-    <a href="/designs/animated/" class="category-card">
-      <div class="category-icon"><i class="ph-light ph-magic-wand"></i></div>
-      <h4>Animated</h4>
-      <p>Keyframes and SVGs in motion.</p>
-    </a>
-  </div>
-
-  <div style="text-align: center; margin-top: 32px;">
-  <a href="/designs/" class="btn-primary" style="padding: 12px 32px;">
-    <i class="ph-bold ph-palette"></i> More Designs
-  </a>
-  </div>
-
-</section>
-
-<section class="section container featured-section" id="featured">
-  <div id="featured-container"></div>
-</section>
-
-<section class="section container" id="gallery">
-  <div class="section-header">
-    <h2>Live Design Gallery</h2>
-    <p>A curated collection of production-ready 404 pages from our GitHub organisation. Clone a specific repository and deploy in seconds.</p>
-  </div>
-
-  <div class="gallery-grid" id="gallery-container"></div>
-
-  <div style="text-align: center; margin-top: 32px;">
-  <a href="/gallery/" class="btn-primary" style="padding: 12px 32px;">
-    <i class="ph-bold ph-images"></i> View Full Gallery
-  </a>
-  </div>
-
-</section>
-
-<section class="section container" id="why-it-matters">
-  <div class="section-header">
-    <h2>Why 404 Pages Matter</h2>
-    <p>A broken link shouldn't mean a broken relationship with your users.</p>
-  </div>
-
-  <div class="why-grid">
-    <div class="why-card">
-      <div class="why-icon"><i class="ph-fill ph-smiley-wink"></i></div>
-      <h4>Better Experience</h4>
-      <p>Transform a moment of frustration into a moment of delight. A well designed error page reassures the user that the site isn't broken, just the link.</p>
-    </div>
-    <div class="why-card">
-      <div class="why-icon"><i class="ph-fill ph-trend-down"></i></div>
-      <h4>Reduced Bounce Rate</h4>
-      <p>Standard browser error pages cause users to close the tab instantly. Custom pages keep them within your ecosystem.</p>
-    </div>
-    <div class="why-card">
-      <div class="why-icon"><i class="ph-fill ph-compass"></i></div>
-      <h4>Helpful Navigation</h4>
-      <p>Guide lost users back to safety by providing strategic links to your homepage, search bar, or most popular content.</p>
-    </div>
-    <div class="why-card">
-      <div class="why-icon"><i class="ph-fill ph-paint-brush"></i></div>
-      <h4>Brand Continuity</h4>
-      <p>Maintain your unique voice, tone, and visual identity even when things go wrong, building trust through attention to detail.</p>
-    </div>
-  </div>
-</section>
-
-<section class="section container" id="contributors">
-  <div class="section-header">
-    <h2>Top Contributors</h2>
-    <p>The talented developers and designers crafting the open-source ecosystem.</p>
-  </div>
-
-  <div class="owner-card-container">
-    <div class="owner-card">
-      <img src="https://github.com/ViratiAkiraNandhanReddy.png" alt="Virati Akiranandhan Reddy" class="owner-avatar">
-      <div class="owner-content">
-        <div class="owner-header">
-          <div class="owner-name">Virati Akiranandhan Reddy</div>
-          <div class="owner-username">@ViratiAkiraNandhanReddy</div>
+  <nav>
+    <div class="nav-glass">
+      <div class="nav-main">
+        <div class="logo">
+          notfound<span>pages</span>
         </div>
-        <div class="owner-badges">
-          <span class="owner-badge badge-owner"><i class="ph ph-crown"></i> Owner</span>
-          <span class="owner-badge badge-maintainer"><i class="ph ph-gear"></i> Maintainer</span>
+        <div class="nav-links">
+          <a href="/">Home</a>
+          <a href="/gallery/">Gallery</a>
+          <a href="/designs/">Designs</a>
+          <a href="/#contribute">Contribute</a>
+          <a href="/docs/">Docs</a>
         </div>
-        <div class="owner-description">
-          Leading the mission to create the world's finest open-source 404 error pages. Dedicated to building beautiful experiences even when things go wrong.
-        </div>
-        <div class="owner-stats">
-          <div class="owner-stat">
-            <div class="owner-stat-value">45+</div>
-            <div class="owner-stat-label">Repositories</div>
-          </div>
-          <div class="owner-stat">
-            <div class="owner-stat-value">1.2K</div>
-            <div class="owner-stat-label">Contributions</div>
-          </div>
-          <div class="owner-stat">
-            <div class="owner-stat-value">2.8K</div>
-            <div class="owner-stat-label">Stars</div>
-          </div>
-        </div>
-        <div class="owner-actions">
-          <a href="https://github.com/ViratiAkiraNandhanReddy" class="btn-primary" style="padding: 12px 24px;">
-            <i class="ph-bold ph-github-logo"></i> GitHub Profile
-          </a>
-          <a href="https://github.com/ViratiAkiraNandhanReddy?tab=repositories" class="btn-outline" style="padding: 12px 24px;">
-            <i class="ph-bold ph-folder"></i> Repositories
+        <div class="nav-actions">
+          <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+            <i class="ph ph-moon" id="theme-icon"></i>
+          </button>
+          <a class="btn-sm" href="https://github.com/notfoundpages">
+            <i class="ph-bold ph-github-logo"></i> <span>View Organisation</span>
           </a>
         </div>
       </div>
-    </div>
-  </div>
-
-  <div class="contributors-grid" id="contributors-container"></div>
-
-  <div style="text-align: center; margin-top: 32px;">
-  <a href="/community/contributors/" class="btn-primary" style="padding: 12px 32px;">
-    <i class="ph-bold ph-users"></i> More Contributors
-  </a>
-  </div>
-
-</section>
-
-<section class="section container testimonials-section">
-  <div class="section-header">
-    <h2>Developer Testimonials</h2>
-    <p>Real experiences from developers and designers using notfoundpages to build beautiful 404 experiences.</p>
-  </div>
-
-  <div class="testimonials-container" id="testimonials-container">
-    <div class="testimonials-track" id="testimonials-track">
-      <!-- Testimonials will be duplicated by JS for infinite scroll -->
-      <div class="testimonial-card">
-        <div class="testimonial-header">
-          <img src="https://github.com/octocat.png" alt="octocat" class="testimonial-avatar">
-          <div class="testimonial-meta">
-            <div class="testimonial-name">
-              Octocat
-              <span class="testimonial-star"><i class="ph-fill ph-star"></i></span>
-            </div>
-            <div class="testimonial-handle">@octocat</div>
-          </div>
-        </div>
-        <div class="testimonial-quote">
-          "These 404 pages are absolutely stunning. The glassmorphism designs work perfectly in our modern web app. Highly recommended!"
-        </div>
-        <div class="testimonial-project">...</div>
-      </div>
-
-      <div class="testimonial-card">
-        <div class="testimonial-header">
-          <img src="https://github.com/ghost.png" alt="ghost" class="testimonial-avatar">
-          <div class="testimonial-meta">
-            <div class="testimonial-name">
-              Ghost
-              <span class="testimonial-star"><i class="ph-fill ph-star"></i></span>
-            </div>
-            <div class="testimonial-handle">@ghost</div>
-          </div>
-        </div>
-        <div class="testimonial-quote">
-          "Contributing was seamless. The repository structure and documentation made it so easy to add my own 404 design variant."
-        </div>
-        <div class="testimonial-project">...</div>
-      </div>
-
-      <div class="testimonial-card">
-        <div class="testimonial-header">
-          <img src="https://github.com/octocat.png" alt="octocat" class="testimonial-avatar">
-          <div class="testimonial-meta">
-            <div class="testimonial-name">
-              Octocat
-              <span class="testimonial-star"><i class="ph-fill ph-star"></i></span>
-            </div>
-            <div class="testimonial-handle">@octocat</div>
-          </div>
-        </div>
-        <div class="testimonial-quote">
-          "As a designer, I love how well-organized this project is. The CSS is clean and the animations are butter-smooth."
-        </div>
-        <div class="testimonial-project">...</div>
-      </div>
-
-      <div class="testimonial-card">
-        <div class="testimonial-header">
-          <img src="https://github.com/ghost.png" alt="ghost" class="testimonial-avatar">
-          <div class="testimonial-meta">
-            <div class="testimonial-name">
-              Ghost
-            </div>
-            <div class="testimonial-handle">@ghost</div>
-          </div>
-        </div>
-        <div class="testimonial-quote">
-          "Perfect for our SaaS platform. We deployed one in production within minutes. Zero dependencies means no bloat!"
-        </div>
-        <div class="testimonial-project">...</div>
-      </div>
-
-      <div class="testimonial-card">
-        <div class="testimonial-header">
-          <img src="https://github.com/octocat.png" alt="octocat" class="testimonial-avatar">
-          <div class="testimonial-meta">
-            <div class="testimonial-name">
-              Octocat
-              <span class="testimonial-star"><i class="ph-fill ph-star"></i></span>
-            </div>
-            <div class="testimonial-handle">@octocat</div>
-          </div>
-        </div>
-        <div class="testimonial-quote">
-          "The community here is amazing. Everyone's supportive and the review process for PRs is incredibly helpful and constructive."
-        </div>
-        <div class="testimonial-project">...</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="section container">
-  <div class="dev-section">
-    <div>
-      <h2 style="font-size: 32px; font-weight: 800; margin-bottom: 16px; letter-spacing: -1px;">Integrates in seconds.</h2>
-      <p style="color: var(--text-muted); font-size: 16px; margin-bottom: 32px;">Browse our GitHub Organisation, find your favorite 404 page, clone its specific repository, and drop the files straight into your project's routing configuration.</p>
-      <a href="#" style="font-weight: 600; color: #0284C7; display: flex; align-items: center; gap: 4px;">
-        Read the documentation <i class="ph-bold ph-arrow-right"></i>
-      </a>
-    </div>
-    
-    <div class="terminal">
-      <div class="terminal-header">
-        <div class="mac-btn mac-close"></div>
-        <div class="mac-btn mac-min"></div>
-        <div class="mac-btn mac-max"></div>
-      </div>
-      <div class="terminal-body">
-        $ <span class="term-cmd">git clone</span> https://github.com/notfoundpages/repo.git<br>
-        $ <span class="term-cmd">cd</span> repo<br>
-        <span class="term-cmd">...</span><br>
-        <br>
-        <span class="term-highlight">> Starting local environment...</span><br>
-        <span class="term-success">✓ Ready on http://localhost:3000/</span>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="section container" id="contribute">
-  <div class="section-header">
-    <h2>Become a Contributor</h2>
-    <p>Help us build the internet's largest open-source collection of error pages. It only takes a few steps to get your PR merged.</p>
-  </div>
-
-  <div class="steps-grid">
-    <div class="step-card">
-      <div class="step-number">01</div>
-      <h3>Fork a Repository</h3>
-      <p>Head over to the notfoundpages GitHub organisation and fork the specific page repository you want to improve, or request a new one.</p>
-    </div>
-    
-    <div class="step-card">
-      <div class="step-number">02</div>
-      <h3>Craft Your Page</h3>
-      <p>Add your code, assets, and a detailed README explaining your UI/UX decisions to your isolated page repository.</p>
-    </div>
-
-    <div class="step-card">
-      <div class="step-number">03</div>
-      <h3>Submit a PR</h3>
-      <p>Open a Pull Request against our main branch. Our maintainers will review your logic, merge it, and credit your GitHub profile!</p>
-    </div>
-  </div>
-</section>
-
-<section class="section container" id="faq">
-  <div class="section-header">
-    <h2>Frequently Asked Questions</h2>
-    <p>Everything you need to know about using and contributing to our open-source organisation.</p>
-  </div>
-
-  <div class="faq-container">
-    <details>
-      <summary>What licenses do these repositories use?</summary>
-      <div class="faq-answer">
-        Our organization dual licenses all repositories under the <strong>MIT License</strong> and <strong>Apache License 2.0</strong>. This ensures maximum flexibility for the community, allowing you to use the code for personal projects, commercial client work, and enterprise software without legal friction.
-      </div>
-    </details>
-
-    <details>
-      <summary>Do these pages support local storage themes?</summary>
-      <div class="faq-answer">
-        Yes! Many of our newer pages (including this very landing page) include lightweight JavaScript snippets to handle Light/Dark mode toggling via the browser's <code>localStorage</code> API.
-      </div>
-    </details>
-
-    <details>
-      <summary>Can I submit a design built with Tailwind CSS?</summary>
-      <div class="faq-answer">
-        We love Tailwind! Since every page is its own repository, simply build your Tailwind-based 404 design and open an issue to request a new, dedicated repository for it within the organisation.
-      </div>
-    </details>
-
-    <details>
-      <summary>How do I get my name on the contributor list?</summary>
-      <div class="faq-answer">
-        Once your first Pull Request is merged into any repository within our organisation, even a single accepted commit is enough to place your name in that repository's contributor list and register your contribution across the organisation.
-        Website featured contributor sections are reserved for contributors who have reached <strong>500+ contributions</strong> across the ecosystem. 
-        <a href="/" style="font-weight: 600; color: #0284C7;">Learn more.</a>
-      </div>
-    </details>
-  </div>
-</section>
-
-<section class="section container">
-  <div class="cta-box">
-    <div class="cta-bg"></div>
-    <div class="cta-content">
-      <h2>Ready to craft better fallbacks?</h2>
-      <p>Join hundreds of developers who are making the web a slightly less frustrating place when things go wrong.</p>
-      <div style="display: flex; justify-content: center; gap: 16px; flex-wrap: wrap;">
-        <a href="https://github.com/notfoundpages" class="btn-primary">
-          <i class="ph-bold ph-github-logo"></i> View GitHub Organisation
+      <button class="nav-more-btn" id="nav-more-btn" aria-label="More options">
+        <i class="ph ph-dots-three"></i>
+      </button>
+      <div class="nav-dropdown" id="nav-dropdown">
+        <a class="nav-dropdown-link" href="/about/">
+          <i class="ph ph-info"></i> About
+        </a>
+        <a class="nav-dropdown-link" href="/sponsors/">
+          <i class="ph ph-star"></i> Sponsors
+        </a>
+        <a class="nav-dropdown-link" href="community/contributors/">
+          <i class="ph ph-users"></i> Contributors
+        </a>
+        <a class="nav-dropdown-link" href="/miscellaneous/">
+          <i class="ph ph-wrench"></i> Miscellaneous
         </a>
       </div>
     </div>
+  </nav>
+
+  <section class="hero container">
+    <div class="badge">
+      <div class="badge-dot"></div>
+      Open Source Ecosystem
+    </div>
+
+    <h1>The Standard for<br><span class="gradient-text">404 Experiences</span></h1>
+
+    <p>Beautifully crafted, open-source error pages built by the developer community. Perfect your app's dead ends with
+      our GitHub organisation repositories.</p>
+
+    <div style="display: flex; justify-content: center; gap: 16px; flex-wrap: wrap;">
+      <a href="https://github.com/orgs/notfoundpages/repositories" class="btn-primary">
+        <i class="ph-bold ph-folder-open"></i> Browse Repositories
+      </a>
+      <a href="/docs/" class="btn-outline">
+        <i class="ph-bold ph-book-open-text"></i> Read Documentation
+      </a>
+    </div>
+
+    <div class="stats">
+      <div class="stat-card">
+        <h2><i class="ph-fill ph-code"></i> <span id="designs">0</span></h2>
+        <p>Repositories</p>
+      </div>
+      <div class="stat-card">
+        <h2><i class="ph-fill ph-star"></i> <span id="stars">0</span></h2>
+        <p>GitHub Stars</p>
+      </div>
+      <div class="stat-card">
+        <h2><i class="ph-fill ph-users"></i> <span id="contributors">0</span></h2>
+        <p>Contributors</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="tech-stack">
+    <div class="container">
+      <p>Independent Repositories. Drop Into Any Stack.</p>
+      <div class="stack-icons">
+        <i class="ph ph-file-html" title="HTML5"></i>
+        <i class="ph ph-file-css" title="CSS3"></i>
+        <i class="ph ph-file-js" title="JavaScript"></i>
+        <i class="ph ph-atom" title="React"></i>
+        <i class="ph ph-code-block" title="Vue/Svelte"></i>
+        <i class="ph ph-terminal-window" title="CLI Integrations"></i>
+      </div>
+    </div>
   </div>
-</section>
 
-<footer id="footer-container"></footer>
+  <section class="section container" id="features">
+    <div class="section-header">
+      <h2>Built for modern stacks</h2>
+      <p>Everything you need to create the perfect fallback experience, tailored for developers and UI/UX designers.</p>
+    </div>
 
-<script src="assets/js/root/index.js"></script>
-<script src="/_components/footer/inject.js"></script>
-<script type="module" src="/assets/js/root/loaders/index.js"></script>
+    <div class="bento-grid">
+      <div class="bento-item bento-wide">
+        <div class="icon-box"><i class="ph ph-lightning"></i></div>
+        <h3>Zero Dependencies</h3>
+        <p>Copy and paste raw HTML and CSS. No massive libraries, no bloat. Just clean, optimized code that renders
+          instantly when your users hit a dead end.</p>
+      </div>
+
+      <div class="bento-item">
+        <div class="icon-box"><i class="ph ph-palette"></i></div>
+        <h3>Glassmorphism & UI</h3>
+        <p>Designs that leverage modern CSS features like backdrop-filter, fluid typography, and dynamic theme
+          switching.</p>
+      </div>
+
+      <div class="bento-item">
+        <div class="icon-box"><i class="ph ph-git-branch"></i></div>
+        <h3>Single Page Repositories</h3>
+        <p>Every specific 404 design gets its own dedicated repository. Zero bloat. Just clone the exact page you need
+          and nothing else.</p>
+      </div>
+
+      <div class="bento-item bento-wide">
+        <div class="icon-box"><i class="ph ph-shield-check"></i></div>
+        <h3>MIT + Apache 2.0 Licensed</h3>
+        <p>Fully open source. Use them in personal projects, commercial client work, or enterprise applications without
+          worrying about complex legalities.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section container" id="categories">
+    <div class="section-header">
+      <h2>Explore Design Categories</h2>
+      <p>Our GitHub organisation categorizes 404 pages by aesthetic and technical implementation.</p>
+    </div>
+
+    <div class="categories-grid">
+      <a href="/designs/minimal/" class="category-card">
+        <div class="category-icon"><i class="ph-light ph-square-half"></i></div>
+        <h4>Minimal</h4>
+        <p>Clean typography and whitespace.</p>
+      </a>
+      <a href="/designs/terminal/" class="category-card">
+        <div class="category-icon"><i class="ph-light ph-terminal"></i></div>
+        <h4>Terminal</h4>
+        <p>Developer-focused console UIs.</p>
+      </a>
+      <a href="/designs/glassmorphism/" class="category-card">
+        <div class="category-icon"><i class="ph-light ph-drop-half-bottom"></i></div>
+        <h4>Glassmorphism</h4>
+        <p>Frosted glass and gradients.</p>
+      </a>
+      <a href="/designs/animated/" class="category-card">
+        <div class="category-icon"><i class="ph-light ph-magic-wand"></i></div>
+        <h4>Animated</h4>
+        <p>Keyframes and SVGs in motion.</p>
+      </a>
+    </div>
+
+    <div style="text-align: center; margin-top: 32px;">
+      <a href="/designs/" class="btn-primary" style="padding: 12px 32px;">
+        <i class="ph-bold ph-palette"></i> More Designs
+      </a>
+    </div>
+
+  </section>
+
+  <section class="section container featured-section" id="featured">
+    <div id="featured-container"></div>
+  </section>
+
+  <section class="section container" id="gallery">
+    <div class="section-header">
+      <h2>Live Design Gallery</h2>
+      <p>A curated collection of production-ready 404 pages from our GitHub organisation. Clone a specific repository
+        and deploy in seconds.</p>
+    </div>
+
+    <div class="gallery-grid" id="gallery-container"></div>
+
+    <div style="text-align: center; margin-top: 32px;">
+      <a href="/gallery/" class="btn-primary" style="padding: 12px 32px;">
+        <i class="ph-bold ph-images"></i> View Full Gallery
+      </a>
+    </div>
+
+  </section>
+
+  <section class="section container" id="why-it-matters">
+    <div class="section-header">
+      <h2>Why 404 Pages Matter</h2>
+      <p>A broken link shouldn't mean a broken relationship with your users.</p>
+    </div>
+
+    <div class="why-grid">
+      <div class="why-card">
+        <div class="why-icon"><i class="ph-fill ph-smiley-wink"></i></div>
+        <h4>Better Experience</h4>
+        <p>Transform a moment of frustration into a moment of delight. A well designed error page reassures the user
+          that the site isn't broken, just the link.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon"><i class="ph-fill ph-trend-down"></i></div>
+        <h4>Reduced Bounce Rate</h4>
+        <p>Standard browser error pages cause users to close the tab instantly. Custom pages keep them within your
+          ecosystem.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon"><i class="ph-fill ph-compass"></i></div>
+        <h4>Helpful Navigation</h4>
+        <p>Guide lost users back to safety by providing strategic links to your homepage, search bar, or most popular
+          content.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon"><i class="ph-fill ph-paint-brush"></i></div>
+        <h4>Brand Continuity</h4>
+        <p>Maintain your unique voice, tone, and visual identity even when things go wrong, building trust through
+          attention to detail.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section container" id="contributors">
+    <div class="section-header">
+      <h2>Top Contributors</h2>
+      <p>The talented developers and designers crafting the open-source ecosystem.</p>
+    </div>
+
+    <div class="owner-card-container">
+      <div class="owner-card">
+        <img src="https://github.com/ViratiAkiraNandhanReddy.png" alt="Virati Akiranandhan Reddy" class="owner-avatar">
+        <div class="owner-content">
+          <div class="owner-header">
+            <div class="owner-name">Virati Akiranandhan Reddy</div>
+            <div class="owner-username">@ViratiAkiraNandhanReddy</div>
+          </div>
+          <div class="owner-badges">
+            <span class="owner-badge badge-owner"><i class="ph ph-crown"></i> Owner</span>
+            <span class="owner-badge badge-maintainer"><i class="ph ph-gear"></i> Maintainer</span>
+          </div>
+          <div class="owner-description">
+            Leading the mission to create the world's finest open-source 404 error pages. Dedicated to building
+            beautiful experiences even when things go wrong.
+          </div>
+          <div class="owner-stats">
+            <div class="owner-stat">
+              <div class="owner-stat-value">45+</div>
+              <div class="owner-stat-label">Repositories</div>
+            </div>
+            <div class="owner-stat">
+              <div class="owner-stat-value">1.2K</div>
+              <div class="owner-stat-label">Contributions</div>
+            </div>
+            <div class="owner-stat">
+              <div class="owner-stat-value">2.8K</div>
+              <div class="owner-stat-label">Stars</div>
+            </div>
+          </div>
+          <div class="owner-actions">
+            <a href="https://github.com/ViratiAkiraNandhanReddy" class="btn-primary" style="padding: 12px 24px;">
+              <i class="ph-bold ph-github-logo"></i> GitHub Profile
+            </a>
+            <a href="https://github.com/ViratiAkiraNandhanReddy?tab=repositories" class="btn-outline"
+              style="padding: 12px 24px;">
+              <i class="ph-bold ph-folder"></i> Repositories
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="contributors-grid" id="contributors-container"></div>
+
+    <div style="text-align: center; margin-top: 32px;">
+      <a href="/community/contributors/" class="btn-primary" style="padding: 12px 32px;">
+        <i class="ph-bold ph-users"></i> More Contributors
+      </a>
+    </div>
+
+  </section>
+
+  <section class="section container testimonials-section">
+    <div class="section-header">
+      <h2>Developer Testimonials</h2>
+      <p>Real experiences from developers and designers using notfoundpages to build beautiful 404 experiences.</p>
+    </div>
+
+    <div class="testimonials-container" id="testimonials-container">
+      <div class="testimonials-track" id="testimonials-track">
+        <!-- Testimonials will be duplicated by JS for infinite scroll -->
+        <div class="testimonial-card">
+          <div class="testimonial-header">
+            <img src="https://github.com/octocat.png" alt="octocat" class="testimonial-avatar">
+            <div class="testimonial-meta">
+              <div class="testimonial-name">
+                Octocat
+                <span class="testimonial-star"><i class="ph-fill ph-star"></i></span>
+              </div>
+              <div class="testimonial-handle">@octocat</div>
+            </div>
+          </div>
+          <div class="testimonial-quote">
+            "These 404 pages are absolutely stunning. The glassmorphism designs work perfectly in our modern web app.
+            Highly recommended!"
+          </div>
+          <div class="testimonial-project">...</div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-header">
+            <img src="https://github.com/ghost.png" alt="ghost" class="testimonial-avatar">
+            <div class="testimonial-meta">
+              <div class="testimonial-name">
+                Ghost
+                <span class="testimonial-star"><i class="ph-fill ph-star"></i></span>
+              </div>
+              <div class="testimonial-handle">@ghost</div>
+            </div>
+          </div>
+          <div class="testimonial-quote">
+            "Contributing was seamless. The repository structure and documentation made it so easy to add my own 404
+            design variant."
+          </div>
+          <div class="testimonial-project">...</div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-header">
+            <img src="https://github.com/octocat.png" alt="octocat" class="testimonial-avatar">
+            <div class="testimonial-meta">
+              <div class="testimonial-name">
+                Octocat
+                <span class="testimonial-star"><i class="ph-fill ph-star"></i></span>
+              </div>
+              <div class="testimonial-handle">@octocat</div>
+            </div>
+          </div>
+          <div class="testimonial-quote">
+            "As a designer, I love how well-organized this project is. The CSS is clean and the animations are
+            butter-smooth."
+          </div>
+          <div class="testimonial-project">...</div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-header">
+            <img src="https://github.com/ghost.png" alt="ghost" class="testimonial-avatar">
+            <div class="testimonial-meta">
+              <div class="testimonial-name">
+                Ghost
+              </div>
+              <div class="testimonial-handle">@ghost</div>
+            </div>
+          </div>
+          <div class="testimonial-quote">
+            "Perfect for our SaaS platform. We deployed one in production within minutes. Zero dependencies means no
+            bloat!"
+          </div>
+          <div class="testimonial-project">...</div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-header">
+            <img src="https://github.com/octocat.png" alt="octocat" class="testimonial-avatar">
+            <div class="testimonial-meta">
+              <div class="testimonial-name">
+                Octocat
+                <span class="testimonial-star"><i class="ph-fill ph-star"></i></span>
+              </div>
+              <div class="testimonial-handle">@octocat</div>
+            </div>
+          </div>
+          <div class="testimonial-quote">
+            "The community here is amazing. Everyone's supportive and the review process for PRs is incredibly helpful
+            and constructive."
+          </div>
+          <div class="testimonial-project">...</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section container">
+    <div class="dev-section">
+      <div>
+        <h2 style="font-size: 32px; font-weight: 800; margin-bottom: 16px; letter-spacing: -1px;">Integrates in seconds.
+        </h2>
+        <p style="color: var(--text-muted); font-size: 16px; margin-bottom: 32px;">Browse our GitHub Organisation, find
+          your favorite 404 page, clone its specific repository, and drop the files straight into your project's routing
+          configuration.</p>
+        <a href="#" style="font-weight: 600; color: #0284C7; display: flex; align-items: center; gap: 4px;">
+          Read the documentation <i class="ph-bold ph-arrow-right"></i>
+        </a>
+      </div>
+
+      <div class="terminal">
+        <div class="terminal-header">
+          <div class="mac-btn mac-close"></div>
+          <div class="mac-btn mac-min"></div>
+          <div class="mac-btn mac-max"></div>
+        </div>
+        <div class="terminal-body">
+          $ <span class="term-cmd">git clone</span> https://github.com/notfoundpages/repo.git<br>
+          $ <span class="term-cmd">cd</span> repo<br>
+          <span class="term-cmd">...</span><br>
+          <br>
+          <span class="term-highlight">> Starting local environment...</span><br>
+          <span class="term-success">✓ Ready on http://localhost:3000/</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section container" id="contribute">
+    <div class="section-header">
+      <h2>Become a Contributor</h2>
+      <p>Help us build the internet's largest open-source collection of error pages. It only takes a few steps to get
+        your PR merged.</p>
+    </div>
+
+    <div class="steps-grid">
+      <div class="step-card">
+        <div class="step-number">01</div>
+        <h3>Fork a Repository</h3>
+        <p>Head over to the notfoundpages GitHub organisation and fork the specific page repository you want to improve,
+          or request a new one.</p>
+      </div>
+
+      <div class="step-card">
+        <div class="step-number">02</div>
+        <h3>Craft Your Page</h3>
+        <p>Add your code, assets, and a detailed README explaining your UI/UX decisions to your isolated page
+          repository.</p>
+      </div>
+
+      <div class="step-card">
+        <div class="step-number">03</div>
+        <h3>Submit a PR</h3>
+        <p>Open a Pull Request against our main branch. Our maintainers will review your logic, merge it, and credit
+          your GitHub profile!</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section container" id="faq">
+    <div class="section-header">
+      <h2>Frequently Asked Questions</h2>
+      <p>Everything you need to know about using and contributing to our open-source organisation.</p>
+    </div>
+
+    <div class="faq-container">
+      <details>
+        <summary>What licenses do these repositories use?</summary>
+        <div class="faq-answer">
+          Our organization dual licenses all repositories under the <strong>MIT License</strong> and <strong>Apache
+            License 2.0</strong>. This ensures maximum flexibility for the community, allowing you to use the code for
+          personal projects, commercial client work, and enterprise software without legal friction.
+        </div>
+      </details>
+
+      <details>
+        <summary>Do these pages support local storage themes?</summary>
+        <div class="faq-answer">
+          Yes! Many of our newer pages (including this very landing page) include lightweight JavaScript snippets to
+          handle Light/Dark mode toggling via the browser's <code>localStorage</code> API.
+        </div>
+      </details>
+
+      <details>
+        <summary>Can I submit a design built with Tailwind CSS?</summary>
+        <div class="faq-answer">
+          We love Tailwind! Since every page is its own repository, simply build your Tailwind-based 404 design and open
+          an issue to request a new, dedicated repository for it within the organisation.
+        </div>
+      </details>
+
+      <details>
+        <summary>How do I get my name on the contributor list?</summary>
+        <div class="faq-answer">
+          Once your first Pull Request is merged into any repository within our organisation, even a single accepted
+          commit is enough to place your name in that repository's contributor list and register your contribution
+          across the organisation.
+          Website featured contributor sections are reserved for contributors who have reached <strong>500+
+            contributions</strong> across the ecosystem.
+          <a href="/" style="font-weight: 600; color: #0284C7;">Learn more.</a>
+        </div>
+      </details>
+    </div>
+  </section>
+
+  <section class="section container">
+    <div class="cta-box">
+      <div class="cta-bg"></div>
+      <div class="cta-content">
+        <h2>Ready to craft better fallbacks?</h2>
+        <p>Join hundreds of developers who are making the web a slightly less frustrating place when things go wrong.
+        </p>
+        <div style="display: flex; justify-content: center; gap: 16px; flex-wrap: wrap;">
+          <a href="https://github.com/notfoundpages" class="btn-primary">
+            <i class="ph-bold ph-github-logo"></i> View GitHub Organisation
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer id="footer-container"></footer>
+
+  <script src="assets/js/root/index.js"></script>
+  <script src="/_components/footer/inject.js"></script>
+  <script type="module" src="/assets/js/root/loaders/index.js"></script>
 </body>
+
 </html>
