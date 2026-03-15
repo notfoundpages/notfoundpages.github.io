@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contributors ~ notfoundpages</title>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <link rel="stylesheet" href="/assets/css/contributors/index.css">
+  <link rel="stylesheet" href="/_components/navbar/style.css">
+  <link rel="stylesheet" href="/_components/footer/style.css">
+
+</head>
+
+<body>
+
+  <div class="mesh-bg"></div>
+
+  <nav id="nav-container"></nav>
+
+  <header class="page-header container">
+    <h1>Meet the <span class="gradient-text">Contributors</span></h1>
+    <p>The developers, designers, and open-source enthusiasts building the premium ecosystem for perfect web fallbacks.
+    </p>
+    <div class="hierarchy-subtitle">
+      Maintainers <i class="ph-bold ph-caret-right"></i> Contributors
+    </div>
+  </header>
+
+  <section class="controls-section container">
+    <div class="search-bar">
+      <i class="ph ph-magnifying-glass"></i>
+      <input type="text" id="searchInput" placeholder="Search by name, handle, or role..."
+        aria-label="Search contributors">
+    </div>
+
+    <div class="filter-group">
+      <button class="filter-btn active" data-filter="all">All Contributors</button>
+      <button class="filter-btn" data-filter="maintainer">Maintainers</button>
+      <button class="filter-btn" data-filter="contributor">Contributors</button>
+    </div>
+  </section>
+
+  <main class="container">
+    <section class="maintainers-section">
+      <h3 class="section-title"><i class="ph-fill ph-shield-check"></i> Core Maintainers</h3>
+      <div class="maintainers-grid" id="maintainersGrid">
+      </div>
+      <div class="no-results" id="maintainersEmpty">
+        <i class="ph-light ph-ghost"></i>
+        <p>No maintainers found matching your search.</p>
+      </div>
+    </section>
+
+    <section class="contributors-section">
+      <h3 class="section-title"><i class="ph-fill ph-users"></i> Community Contributors</h3>
+      <div class="contributors-grid" id="contributorsGrid">
+      </div>
+      <div class="load-more-container" id="loadMoreContainer" style="display: none;">
+        <button class="load-more-btn" id="loadMoreBtn" aria-label="Load more contributors">
+          <i class="ph-bold ph-caret-down"></i> View More
+        </button>
+      </div>
+      <div class="no-results" id="contributorsEmpty">
+        <i class="ph-light ph-ghost"></i>
+        <p>No contributors found matching your search.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer id="footer-container"></footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="ph-bold ph-arrow-up"></i>
+  </button>
+
+  <script src="/assets/js/contributors/index.js"></script>
+  <script src="/_components/navbar/inject.js"></script>
+  <script src="/_components/footer/inject.js"></script>
+
+</body>
+
+</html>
