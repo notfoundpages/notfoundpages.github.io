@@ -1099,6 +1099,125 @@ footer {
   line-height: 1.7;
 }
 
+/* --- TEAM GRID & CARDS --- */
+.team-grid { 
+  display: grid; 
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 32px; 
+  max-width: auto; 
+  margin-left: auto;
+  margin-bottom: 32px; 
+}
+
+.team-card { 
+  background: var(--surface-glass); 
+  backdrop-filter: blur(12px); 
+  -webkit-backdrop-filter: blur(12px); 
+  border: 1px solid var(--border); 
+  border-radius: var(--radius-lg); 
+  padding: 32px 24px; 
+  text-align: center; 
+  transition: all 0.3s ease; 
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.team-card:hover { 
+  transform: translateY(-8px); 
+  box-shadow: var(--shadow-xl); 
+  border-color: #0284C7; 
+}
+
+.team-avatar { 
+  width: 120px; 
+  height: 120px; 
+  border-radius: 50%; 
+  margin: 0 auto 20px; 
+  background: var(--border); 
+  border: 4px solid var(--surface); 
+  box-shadow: 0 0 0 1px var(--border); 
+  object-fit: cover; 
+}
+
+.team-card h4 { 
+  font-size: 20px; 
+  font-weight: 700; 
+  margin-bottom: 6px; 
+  text-wrap: nowrap; 
+}
+
+.team-role { 
+  color: #0284C7; 
+  font-size: 13px; 
+  font-weight: 600; 
+  margin-bottom: 12px; 
+  text-transform: uppercase; 
+  letter-spacing: 0.5px; 
+}
+
+.team-card p { 
+  color: var(--text-muted); 
+  font-size: 14px; 
+  line-height: 1.5;
+}
+
+.team-badge {
+  display: inline-block;
+  background: linear-gradient(135deg, #0284C7, #3B82F6);
+  color: white;
+  padding: 4px 10px;
+  border-radius: 100px;
+  font-size: 11px;
+  font-weight: 600;
+  box-shadow: 0 2px 8px rgba(2, 132, 199, 0.2);
+}
+
+.tier-badge {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 100px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.team-owner-badge {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: linear-gradient(135deg, #FFB81C, #FFA500);
+  color: #000;
+  font-size: 10px;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  box-shadow: 0 4px 12px rgba(255, 184, 28, 0.3);
+}
+
+.team-maintainer-badge {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: linear-gradient(135deg, #3B82F6, #2563EB);
+  color: #fff;
+  font-size: 10px;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+}
+
+@media (max-width: 1024px) {
+  .team-grid {display: none;}
+}
+
 /* --- TOP CONTRIBUTORS --- */
 .contributors-grid {
   display: grid;
@@ -1151,193 +1270,6 @@ footer {
 .contrib-stats {
   font-size: 13px;
   color: var(--text-muted);
-}
-
-/* --- PROJECT OWNER CARD --- */
-.owner-card-container {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 64px;
-}
-
-.owner-card {
-  background: var(--surface-glass);
-  border: 1px solid var(--border);
-  border-radius: var(--radius-lg);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  box-shadow: var(--shadow-md);
-  padding: 32px;
-  transition: all 0.3s ease;
-  width: 100%;
-  max-width: 100%;
-  position: relative;
-  overflow: hidden;
-  display: flex;
-  gap: 32px;
-  align-items: flex-start;
-}
-
-.owner-card::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: var(--brand-glow);
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  z-index: 0;
-  pointer-events: none;
-}
-
-.owner-card:hover {
-  border-color: #0284C7;
-  box-shadow: var(--shadow-xl);
-  transform: translateY(-6px);
-  box-shadow: 0 20px 40px rgba(59, 130, 246, 0.15);
-}
-
-.owner-card:hover::before {
-  opacity: 0.15;
-}
-
-.owner-card>* {
-  position: relative;
-  z-index: 1;
-}
-
-.owner-avatar {
-  width: 140px;
-  height: 140px;
-  border-radius: 50%;
-  flex-shrink: 0;
-  background: linear-gradient(135deg, #0284C7, #3B82F6);
-  display: block;
-  border: 4px solid var(--surface);
-  box-shadow: 0 0 0 2px var(--border),
-    0 0 24px rgba(59, 130, 246, 0.3);
-  transition: all 0.3s ease;
-  object-fit: cover;
-}
-
-.owner-card:hover .owner-avatar {
-  transform: scale(1.08);
-  box-shadow: 0 0 0 2px var(--border), 0 0 32px rgba(59, 130, 246, 0.5);
-}
-
-.owner-content {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.owner-header {
-  margin-bottom: 12px;
-  text-align: left;
-}
-
-.owner-name {
-  font-size: 24px;
-  font-weight: 800;
-  letter-spacing: -0.5px;
-  margin-bottom: 2px;
-}
-
-.owner-username {
-  font-size: 14px;
-  color: var(--text-muted);
-  font-weight: 500;
-  margin-bottom: 0;
-}
-
-.owner-badges {
-  display: flex;
-  gap: 8px;
-  justify-content: flex-start;
-  margin-bottom: 12px;
-  flex-wrap: wrap;
-}
-
-.owner-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 4px;
-  padding: 6px 12px;
-  border-radius: 100px;
-  font-size: 11px;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-}
-
-.badge-owner {
-  background: rgba(251, 146, 60, 0.2);
-  color: #EA580C;
-}
-
-.badge-maintainer {
-  background: rgba(59, 130, 246, 0.2);
-  color: #3B82F6;
-}
-
-.badge-creator {
-  background: rgba(168, 85, 247, 0.2);
-  color: #A855F7;
-}
-
-.owner-description {
-  color: var(--text-muted);
-  font-size: 14px;
-  line-height: 1.6;
-  margin-bottom: 16px;
-  max-width: 100%;
-  text-align: left;
-}
-
-.owner-stats {
-  display: flex;
-  justify-content: flex-start;
-  gap: 24px;
-  margin-bottom: 16px;
-  flex-wrap: wrap;
-}
-
-.owner-stat {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 2px;
-}
-
-.owner-stat-value {
-  font-size: 18px;
-  font-weight: 800;
-  color: var(--text-main);
-}
-
-.owner-stat-label {
-  font-size: 11px;
-  color: var(--text-muted);
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  font-weight: 600;
-}
-
-.owner-actions {
-  display: flex;
-  gap: 12px;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-  margin-top: 16px;
-}
-
-.owner-actions .btn-primary,
-.owner-actions .btn-outline {
-  padding: 10px 20px !important;
-  font-size: 13px;
 }
 
 /* --- TESTIMONIALS --- */
