@@ -9,7 +9,7 @@ async function loadContributors() {
     const card = `
     <a href="${u.github}" class="contributor-card">
 
-      <img src="${u.avatar}" class="contrib-avatar">
+      <img src="${u.avatar}" class="contrib-avatar" alt="${u.name}">
 
       <div class="contrib-name" title="${u.name}">
         ${u.name}
