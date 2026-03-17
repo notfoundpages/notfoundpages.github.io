@@ -180,6 +180,9 @@ document.addEventListener('DOMContentLoaded', () => {
           <a href="https://github.com/notfoundpages" target="_blank" rel="noopener" class="footer-link">
             <i class="ph-bold ph-arrow-up-right"></i> Changelog
           </a>
+          <a href="/community/conduct/" target="_blank" rel="noopener" class="footer-link">
+            <i class="ph-bold ph-arrow-up-right"></i> Code of Conduct
+          </a>
         </div>
       </div>
 
@@ -195,17 +198,20 @@ document.addEventListener('DOMContentLoaded', () => {
           <a href="https://github.com/notfoundpages" target="_blank" rel="noopener" class="footer-social-link" aria-label="GitHub">
             <i class="ph-bold ph-github-logo"></i>
           </a>
-          <a href="https://github.com/notfoundpages/discussions" target="_blank" rel="noopener" class="footer-social-link" aria-label="Dissusions">
-            <i class="ph-bold ph-users"></i>
+          <a href="https://github.com/orgs/notfoundpages/discussions" target="_blank" rel="noopener" class="footer-social-link" aria-label="Dissusions">
+            <i class="ph-bold ph-chats"></i>
           </a>
           <a href="https://github.com/sponsors/notfoundpages" target="_blank" rel="noopener" class="footer-social-link" aria-label="Sponsorship">
             <i class="ph-bold ph-heart"></i>
           </a>
-          <a href="mailto:" class="footer-social-link" aria-label="Email">
+          <a href="mailto:notfoundpages@outlook.com" class="footer-social-link" aria-label="Email">
             <i class="ph-bold ph-envelope"></i>
           </a>
           <a href="https://twitter.com/notfoundpages" target="_blank" rel="noopener" class="footer-social-link" aria-label="Twitter">
             <i class="ph-bold ph-x-logo"></i>
+          </a>
+          <a href="https://youtube.com/@notfoundpages" target="_blank" rel="noopener" class="footer-social-link" aria-label="YouTube">
+            <i class="ph-bold ph-youtube-logo"></i>
           </a>
           <a href="https://instagram.com/notfoundpages.oss" target="_blank" rel="noopener" class="footer-social-link" aria-label="Instagram">
             <i class="ph-bold ph-instagram-logo"></i>
