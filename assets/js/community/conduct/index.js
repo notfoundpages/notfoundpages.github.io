@@ -45,7 +45,7 @@ function toggleExpand(btn) {
 
 /* --- COPY EMAIL FUNCTIONALITY --- */
 function copyEmail(btn) {
-  navigator.clipboard.writeText('conduct@notfoundpages.dev').then(() => {
+  navigator.clipboard.writeText('notfoundpages@outlook.com').then(() => {
     btn.classList.add('copied');
     setTimeout(() => {
       btn.classList.remove('copied');
