@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Security ~ notfoundpages</title>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap"
+    rel="stylesheet">
+
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+  <link rel="stylesheet" href="/assets/css/community/security/index.css">
+  <link rel="stylesheet" href="/_components/navbar/style.css">
+  <link rel="stylesheet" href="/_components/footer/style.css">
+
+</head>
+
+<body>
+
+  <div class="mesh-bg"></div>
+
+  <nav id="nav-container"></nav>
+
+  <section class="hero container reveal">
+    <div class="badge mono-badge">
+      <div class="badge-dot badge-emerald"></div>
+      Trust / Security
+    </div>
+
+    <h1><span class="gradient-text">Security</span> at notfoundpages</h1>
+
+    <p>Security, responsible disclosure, and ecosystem integrity are core priorities. We treat the safety of our
+      repositories, dependencies, and published assets with the highest importance.</p>
+
+    <div class="security-status-grid delay-1 reveal">
+      <div class="status-pill">
+        <span class="status-pill-title"><i class="ph-fill ph-check-circle" style="color: #10B981;"></i> Policy
+          Status</span>
+        <span class="status-pill-value"><span class="status-indicator" style="margin-right: 6px;"></span> Active &
+          Enforced</span>
+      </div>
+      <div class="status-pill">
+        <span class="status-pill-title"><i class="ph-fill ph-eye"></i> Active Monitoring</span>
+        <span class="status-pill-value">Enabled via GitHub Advanced Security</span>
+      </div>
+      <div class="status-pill">
+        <span class="status-pill-title"><i class="ph-fill ph-clock-counter-clockwise"></i> Last Reviewed</span>
+        <span class="status-pill-value">March 2026</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section container reveal delay-2" style="padding-top: 0;" id="report">
+    <div class="security-card-wrapper">
+      <div class="security-card">
+        <h2>Report a Security Issue</h2>
+        <p>Vulnerabilities, exposed credentials, repository risks, or sensitive abuse vectors should be reported
+          privately to our maintenance team. Please practice responsible disclosure.</p>
+
+        <div class="email-placeholder">
+          <i class="ph-fill ph-envelope-simple"></i>
+          notfoundpages@outlook.com
+        </div>
+
+        <div>
+          <a href="mailto:notfoundpages@outlook.com" class="btn-primary" style="background: #10B981; color: #fff;">
+            Contact Security Team
+          </a>
+        </div>
+        <p style="font-size: 13px; margin-top: 24px; margin-bottom: 0;">We aim to acknowledge all reports within 48
+          hours.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section container reveal delay-3">
+    <div class="section-header">
+      <h2>Responsible Disclosure Process</h2>
+      <p>How we handle, validate, and patch reported vulnerabilities.</p>
+    </div>
+
+    <div class="timeline-container">
+      <div class="timeline-line"></div>
+      <div class="timeline-grid">
+        <div class="timeline-step">
+          <div class="step-number">01</div>
+          <div>
+            <h4>Private Report</h4>
+            <p>You submit the vulnerability privately via email with reproduction steps.</p>
+          </div>
+        </div>
+        <div class="timeline-step">
+          <div class="step-number">02</div>
+          <div>
+            <h4>Triage & Review</h4>
+            <p>Our maintainers acknowledge receipt and begin assessing the impact.</p>
+          </div>
+        </div>
+        <div class="timeline-step">
+          <div class="step-number">03</div>
+          <div>
+            <h4>Validation</h4>
+            <p>We reproduce the issue locally and determine the required scope of the fix.</p>
+          </div>
+        </div>
+        <div class="timeline-step">
+          <div class="step-number">04</div>
+          <div>
+            <h4>Mitigation</h4>
+            <p>A patch or configuration change is developed and tested securely.</p>
+          </div>
+        </div>
+        <div class="timeline-step">
+          <div class="step-number">05</div>
+          <div>
+            <h4>Disclosure</h4>
+            <p>Updates are pushed, and public acknowledgement is provided if applicable.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section container reveal delay-3" id="scope">
+    <div class="section-header">
+      <h2>Reporting Scope</h2>
+      <p>Please review what qualifies as a valid security report before contacting the team.</p>
+    </div>
+
+    <div class="scope-grid">
+      <div class="scope-card scope-in">
+        <h3><i class="ph-fill ph-check-circle"></i> In Scope</h3>
+        <ul class="scope-list">
+          <li><i class="ph-bold ph-git-branch"></i> Vulnerabilities in repository infrastructure or workflows.</li>
+          <li><i class="ph-bold ph-package"></i> Exploitable risks in third-party dependencies.</li>
+          <li><i class="ph-bold ph-key"></i> Accidental exposure of secrets, tokens, or API credentials.</li>
+          <li><i class="ph-bold ph-shield-slash"></i> Bypass of branch protections or review gates.</li>
+          <li><i class="ph-bold ph-warning-circle"></i> Malicious pull requests or supply chain risks.</li>
+          <li><i class="ph-bold ph-users"></i> Severe abuse affecting ecosystem trust.</li>
+        </ul>
+      </div>
+
+      <div class="scope-card scope-out">
+        <h3><i class="ph-fill ph-x-circle"></i> Out of Scope</h3>
+        <ul class="scope-list">
+          <li><i class="ph-bold ph-paint-brush"></i> Cosmetic UI issues, typos, or rendering bugs.</li>
+          <li><i class="ph-bold ph-lightbulb"></i> General feature suggestions or design critiques.</li>
+          <li><i class="ph-bold ph-bug"></i> Non-security code bugs without exploit potential.</li>
+          <li><i class="ph-bold ph-book-open-text"></i> Documentation wording improvements.</li>
+          <li><i class="ph-bold ph-browser"></i> Theoretical vulnerabilities without a viable attack vector.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section container reveal delay-3">
+    <div class="section-header">
+      <h2>Security Principles</h2>
+      <p>The core tenets that guide our repository maintenance and contribution standards.</p>
+    </div>
+
+    <div class="bento-grid">
+      <div class="bento-item bento-wide">
+        <div class="icon-box"><i class="ph ph-lock-key"></i></div>
+        <h3>Minimal Exposure</h3>
+        <p>We actively prevent the committing of secrets, limit workflow permissions to the minimum required, and
+          restrict direct pushes to main branches.</p>
+      </div>
+
+      <div class="bento-item bento-wide">
+        <div class="icon-box"><i class="ph ph-magnifying-glass"></i></div>
+        <h3>Review-First Contributions</h3>
+        <p>Every pull request is subjected to review. Contributions that introduce unknown dependencies, obfuscated
+          code, or workflow changes are heavily scrutinized.</p>
+      </div>
+
+      <div class="bento-item bento-wide">
+        <div class="icon-box"><i class="ph ph-package"></i></div>
+        <h3>Dependency Awareness</h3>
+        <p>We believe in zero-dependency architectures where possible. When third-party assets are necessary, they are
+          vetted, version-locked, and continuously monitored.</p>
+      </div>
+
+      <div class="bento-item bento-wide">
+        <div class="icon-box"><i class="ph ph-handshake"></i></div>
+        <h3>Transparent Maintenance</h3>
+        <p>While vulnerability reports are handled privately, patches and security advisories are published
+          transparently to protect downstream adopters and forks.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section container reveal delay-3">
+    <div class="cta-box">
+      <div class="cta-bg"></div>
+      <div class="cta-content">
+        <h2>Repository Security Integration</h2>
+        <p>We leverage native GitHub security features, including Dependabot alerts, secret scanning, and branch
+          protection rules to maintain ecosystem health.</p>
+        <div style="display: flex; justify-content: center; gap: 16px; flex-wrap: wrap; margin-top: 32px;">
+          <a href="https://github.com/notfoundpages" class="btn-primary" target="_blank" rel="noopener noreferrer">
+            <i class="ph-bold ph-shield"></i> View Organisation Security
+          </a>
+          <a href="/docs/" class="btn-outline">
+            <i class="ph-bold ph-book-open-text"></i> Read Documentation
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer id="footer-container"></footer>
+
+  <script src="/assets/js/community/security/index.js"></script>
+  <script src="/_components/footer/inject.js"></script>
+  <script src="/_components/navbar/inject.js"></script>
+
+</body>
+
+</html>
