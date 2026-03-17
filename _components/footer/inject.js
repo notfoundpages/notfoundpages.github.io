@@ -159,6 +159,9 @@ document.addEventListener('DOMContentLoaded', () => {
           <a href="https://github.com/notfoundpages" target="_blank" rel="noopener" class="footer-link">
             <i class="ph-bold ph-arrow-up-right"></i> Contribute
           </a>
+          <a href="/community/security/" target="_blank" rel="noopener" class="footer-link">
+            <i class="ph-bold ph-arrow-up-right"></i> Security
+          </a>
         </div>
       </div>
 
@@ -168,7 +171,7 @@ document.addEventListener('DOMContentLoaded', () => {
           <i class="ph ph-shield"></i> Legal
         </h3>
         <div class="footer-links">
-          <a href="/license/" class="footer-link">
+          <a href="/legal/license/" class="footer-link">
             <i class="ph-bold ph-arrow-up-right"></i> License
           </a>
           <a href="https://github.com/notfoundpages" target="_blank" rel="noopener" class="footer-link">
