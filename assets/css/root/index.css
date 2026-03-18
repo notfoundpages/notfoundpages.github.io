@@ -836,6 +836,7 @@ footer {
 
 .featured-card {
   display: flex;
+  flex-direction: column;
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: var(--radius-lg);
@@ -850,15 +851,16 @@ footer {
 }
 
 .featured-img {
-  width: 50%;
-  min-height: 350px;
-  background-size: cover;
+  width: 100%;
+  aspect-ratio: 16/10;
+  background-size: contain;
   background-position: center;
-  border-right: 1px solid var(--border);
+  background-repeat: no-repeat;
+  background-color: var(--border);
 }
 
 .featured-content {
-  width: 50%;
+  width: 100%;
   padding: 48px;
   display: flex;
   flex-direction: column;
@@ -964,7 +966,7 @@ footer {
 }
 
 .gallery-img {
-  height: 200px;
+  aspect-ratio: 16/10;
   background: var(--border);
   width: 100%;
   background-size: cover;
@@ -1432,7 +1434,7 @@ footer {
   .step-card { border-left: none; border-top: 2px solid var(--border); padding: 32px 0; }
   
   .featured-card { flex-direction: column; }
-  .featured-img { width: 100%; min-height: 250px; border-right: none; border-bottom: 1px solid var(--border); }
+  .featured-img { width: 100%; aspect-ratio: 16/10; }
   .featured-content { width: 100%; padding: 32px; }
   .gallery-grid { grid-template-columns: repeat(2, 1fr); }
   .why-grid { grid-template-columns: repeat(2, 1fr); }
@@ -1647,9 +1649,7 @@ footer {
 
   .featured-img {
     width: 100%;
-    min-height: 240px;
-    border-right: none;
-    border-bottom: 1px solid var(--border);
+    aspect-ratio: 16/10;
   }
 
   .featured-content {

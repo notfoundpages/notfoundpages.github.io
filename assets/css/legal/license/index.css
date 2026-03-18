@@ -571,8 +571,13 @@ details[open] summary::after {
   font-size: 15px;
   line-height: 1.8;
   color: var(--text-muted);
-  white-space: pre-wrap;
-  word-wrap: break-word;
+  white-space: pre;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.license-text::-webkit-scrollbar {
+  display: none;
 }
 
 .license-text strong {
